@@ -1,15 +1,25 @@
 import React from 'react';
 import './Track.css';
 
-export const Track = () => {
+export class Track extends React.Component{
+
+   renderAction(){
+     if(this.props.isRemoval){
+       return <button className="track-action">-</button> 
+     } else{
+        return <button className="track-action">+</button>
+     }
+   }
+   render(){
     return (
-        <div class="Track">
-            <div class="Track-information">
-                <h3></h3>
-                <p></p>
+        <div className="Track">
+            <div className="Track-information">
+                <h3>track name</h3>
+                <p>track artist | track album</p>
        </div>
-        <button class="Track-action"></button>
+       {this.renderAction()}
     </div>
     )
+   }
 }
 export default Track;
