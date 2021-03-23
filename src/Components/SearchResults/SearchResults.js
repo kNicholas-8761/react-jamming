@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
-import './SearchResult.css'
+import './SearchResults.css'
 
 const SearchResults = () =>{
-    return
+    return(
         <div className="SearchResults">
          <h2>Results</h2>
-         <Tracklist />
+         {/* <Tracklist /> */}
     </div>
     )
 }
