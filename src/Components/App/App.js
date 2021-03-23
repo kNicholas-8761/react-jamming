@@ -13,6 +13,7 @@ const App = ()=> {
         <div className="App-playlist">
           <SearchResults />
           <Playlist />
+
     </div>
 </div>
 </div>
