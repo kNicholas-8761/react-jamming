@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults'
+import Playlist from '../Playlist/Playlist'
 
 const App = ()=> {
   return(
@@ -11,7 +12,7 @@ const App = ()=> {
         <SearchBar />
         <div className="App-playlist">
           <SearchResults />
-          {/* <Playlist /> */}
+          <Playlist />
     </div>
 </div>
 </div>
