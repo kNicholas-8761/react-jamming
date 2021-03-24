@@ -18,6 +18,9 @@ import './Track.css';
    addTrack(){
       this.props.onAdd(this.props.track)
    }
+   removeTrack(){
+      this.props.onRemove(this.props.track)
+   }
 
    render(){
     return (
