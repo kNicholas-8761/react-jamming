@@ -19,7 +19,18 @@ class App extends React.Component{
   ]
     }
   }
-  render(){
+
+  addTrack(track){
+    let tracks = this.state.playlistTracks;
+    if(tracks.find(savedTrack => savedTrack.id === track.id)){
+      return;
+    }
+      tracks.push(track)
+      this.setState({playlistTracks: track});
+    }
+  
+
+    render(){
     return(
       <div>
        <h1>Ja<span className="highlight">mmm</span>ing</h1>
