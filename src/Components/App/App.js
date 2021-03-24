@@ -15,7 +15,7 @@ class App extends React.Component{
     playlistName: 'My Playlist',
     playlistTracks:[{name:'PlaylistName1' , artist: 'PlaylistArtist1' , album: 'PlaylistAlbum1' , id: 4},
                     {name:'PlaylistName2' , artist: 'PlaylistArtist2' , album: 'PlaylistAlbum2' , id: 5},
-                    {name:'PlaylistName3' , artist: 'PlaylistArtist3' , album: 'PlaylistAlbum3' , id: 6},
+                    {name:'PlaylistName3' , artist: 'PlaylistArtist3' , album: 'PlaylistAlbum3' , id: 6}
   ]
     }
     this.addTrack = this.addTrack.bind(this);
@@ -27,7 +27,7 @@ class App extends React.Component{
       return;
     }
       tracks.push(track)
-      this.setState({playlistTracks: track});
+      this.setState({playlistTracks: tracks});
     }
   
 
