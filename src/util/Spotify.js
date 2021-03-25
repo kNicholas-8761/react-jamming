@@ -1,3 +1,5 @@
+let accessToken;
+
 const Spotify ={
 
 }
