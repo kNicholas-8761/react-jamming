@@ -1,5 +1,5 @@
 const clientId ='fa0df88c46604a4684ad017ddb6822fa';
-const redirectUri = 'http://localhost:3000/'
+const redirectUri = 'http://playlist-that-rocks.surge.sh/'
 let accessToken;
 
 const Spotify = {
@@ -22,6 +22,7 @@ const Spotify = {
     }
   },
 
+
   search(term) {
     const accessToken = Spotify.getAccessToken();
     return fetch(`https://api.spotify.com/v1/search?type=track&q=${term}`, {
@@ -43,7 +44,7 @@ const Spotify = {
       }));
     });
   },
-
+  
   savePlaylist(name, trackUris) {
     if (!name || !trackUris.length) {
       return;
@@ -72,6 +73,7 @@ const Spotify = {
       });
     });
   }
+
 };
 
 export default Spotify;
